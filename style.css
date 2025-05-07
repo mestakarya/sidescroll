@@ -20,7 +20,7 @@ body, html {
             font-size: 2rem;
             color: white;
         }
-        .section1 { width: 90vw; background: red; }
+        .section1 { width: 90vw; background:#0246b1; }
         .section2 {
             width: 10vw;
             background: blue;
