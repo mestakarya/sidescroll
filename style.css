@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .wrapper {
+            display: flex;
+            width: 400vw; /* Total lebar untuk scroll horizontal */
+            height: 100vh;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+        .section1 { width: 90vw; background: red; }
+        .section2 {
+            width: 10vw;
+            background: blue;
+            overflow-y: auto;
+            height: 100vh;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* Internet Explorer 10+ */
+        }
+        .section2::-webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+        }
+        .section2 .content {
+            height: 300vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-size: 4rem;
+        }
+        .section3 { width: 100vw; background: green; }
+        .section4 {
+            width: 100vw;
+            background: purple;
+            overflow-y: auto;
+            height: 100vh;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* Internet Explorer 10+ */
+        }
+        .section4::-webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+        }
+        .section4 .content {
+            height: 200vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .section5 { width: 100vw; background: orange; }
